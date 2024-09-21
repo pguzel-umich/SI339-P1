@@ -6,13 +6,13 @@ The output includes an HTML page (index.html) with links to individual athlete p
 
 Our basic data structure is given below       \
 github                                        \
-    athlete_pages                             \
-        [athlete_id].html                     \
-    index.html                                \
-    render_templates.py                       \
-    images                                    \
-      AthleteImages                           \
-        [athlete_id].jpg                      \
-      icon.png                                \
-      images.jpeg                             \
-      site_logo.png                           \
+&emsp; athlete_pages                          \
+&emsp;&emsp; [athlete_id].html                \
+&emsp; index.html                             \
+&emsp; render_templates.py                    \
+&emsp; images                                 \
+&emsp; AthleteImages                          \
+&emsp;&emsp; [athlete_id].jpg                 \
+&emsp; icon.png                               \
+&emsp; images.jpeg                            \
+&emsp; site_logo.png                           
