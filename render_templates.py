@@ -105,7 +105,9 @@ index_html_template = f"""
     
     <!--nav bar-->
     <div id="tk1">
-        <img src="/images/site_logo.png" alt="site logo"> <!-- IMG TK-->
+        <a href="https://www.athletic.net/">
+            <img src="/images/site_logo.png" alt="site logo" width="175" height="26.13"> <!-- IMG TK-->
+        </a>
         <nav>
             <ul>
                 <li><a href="https://www.google.com/">login</a></li>
@@ -115,7 +117,7 @@ index_html_template = f"""
 
     <!--Main box-->
     <div>
-        <h1><a href="https://www.athletic.net">Athletic.net</a></h1>
+        <h1><a href="https://pguzel-umich.github.io/si339-gp/">Team Insert Name</a></h1>
 
         <!--Main box 1-->
             <!-- Logo?? of what school (make h1 tag)-->
