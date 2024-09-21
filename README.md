@@ -16,3 +16,13 @@ github                                        \
 &emsp; icon.png                               \
 &emsp; images.jpeg                            \
 &emsp; site_logo.png                           
+
+
+├── main_script.py
+├── drive_download
+│   ├── athletes
+│   │   ├── mens_team (contains male athletes' CSV files)
+│   │   ├── womens_team (contains female athletes' CSV files)
+├── athlete_pages (generated individual athlete HTML files)
+├── images
+│   ├── AthleteImages (contains athlete profile images)
