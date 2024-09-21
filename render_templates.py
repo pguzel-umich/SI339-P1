@@ -221,7 +221,7 @@ def render_student_html(athlete_dict, template_html):
     # Everything after title
     temp_html = f"""
     <div>
-        <img src="/images/AthleteImages/{athlete_dict['id'][0]}.jpg" alt="img of {athlete_dict['name'][0]}, id: {athlete_dict['id']}" width="150" height="150">
+        <img src="../images/AthleteImages/{athlete_dict['id'][0]}.jpg" alt="img of {athlete_dict['name'][0]}, id: {athlete_dict['id']}" width="150" height="150">
         <h2>{athlete_dict['name'][0]}</h2>
         {athlete_dict['id'][0]}
     </div>
@@ -264,7 +264,7 @@ student_html_template = f"""
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deliverable</title> <!--Title TK-->
 
-    <link rel="icon" type="/images/icon.png" href="/images/icon.png">
+    <link rel="icon" type="../images/icon.png" href="../images/icon.png">
 
 </head>
 <body>
@@ -272,7 +272,7 @@ student_html_template = f"""
     <!--nav bar-->
     <div id="tk1">
         <a href="https://www.athletic.net/">
-            <img src="/images/site_logo.jpeg" alt="site logo" width="175" height="26"> <!-- IMG TK-->
+            <img src="../images/site_logo.jpeg" alt="site logo" width="175" height="26"> <!-- IMG TK-->
         </a>
         <nav>
             <ul>
@@ -285,7 +285,7 @@ student_html_template = f"""
     <div>
      <!--Main box 1-->
         <img src="team_insert_name.jpg" alt="team insert name logo" width="175" height="175">
-        <h1><a href="/index.html">Team Insert Name</a></h1>
+        <h1><a href="../index.html">Team Insert Name</a></h1>
         <h3> 48104, MI </h3>
     </div>
 """
