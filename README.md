@@ -18,9 +18,9 @@ In short, our program creates index.html for all athletes and individual HTML fi
 
 4. **`career_record(athlete_dict)`**: Returns an HTML table of an athlete's career records.
 
-5. **`render_student_html(athlete_dict, template_html)`**: Adds an athlete's profile, season, and career records to the template_html.
+5. **`render_student_html(athlete_dict, template_html)`**: Adds an athlete's profile picture, name, and ID with template_html.
 
-6. **`render_html(athlete_list, student_html_template)`**: Creates individual HTML files for each athlete using student_html_template.
+6. **`render_html(athlete_list, student_html_template)`**: Creates individual HTML files for each athlete with student_html_template.
 
 
 ### Data Requirements
