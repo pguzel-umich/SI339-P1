@@ -69,11 +69,12 @@ def template_table(athlete_list):
         <tr>
             <td>
                 <div>
-                    <img src="images/AthleteImages/{athlete_dict['id'][0]}.jpg" alt="img of {athlete_dict['name'][0]}, id: {athlete_dict['id']}" width="50" height="50">
-
                     <!-- not all the images we require exists in the folders provided to us, but we have realized that there should exists profile pictures of athletes (there is a column in meet csv) that uses their id and .jpg extension to navigate and call them -->
                     
-                    {athlete_dict['name'][0]}
+                    <a href="athlete_pages/{athlete_dict['id'][0]}.html"> <img src="images/AthleteImages/{athlete_dict['id'][0]}.jpg" alt="img of {athlete_dict['name'][0]}, id: {athlete_dict['id']}" width="50" height="50"> </a>
+                    
+                    <a href="athlete_pages/{athlete_dict['id'][0]}.html"> {athlete_dict['name'][0]} </a>
+        
                     {athlete_dict['id'][0]}
                 </div>
             </td>
@@ -98,7 +99,9 @@ index_html_template = f"""
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title> <!--Title TK-->
+    <title>Deliverable</title> <!--Title TK-->
+
+    <link rel="icon" type="images/icon.png" href="images/icon.png">
 
 </head>
 <body>
@@ -106,7 +109,7 @@ index_html_template = f"""
     <!--nav bar-->
     <div id="tk1">
         <a href="https://www.athletic.net/">
-            <img src="/images/site_logo.png" alt="site logo" width="175" height="26.13"> <!-- IMG TK-->
+            <img src="/images/images.jpeg" alt="site logo" width="175" height="26.13"> <!-- IMG TK-->
         </a>
         <nav>
             <ul>
@@ -117,18 +120,16 @@ index_html_template = f"""
 
     <!--Main box-->
     <div>
+     <!--Main box 1-->
+        <img src="team_insert_name.jpg" alt="team insert name logo" width="100" height="100">
         <h1><a href="https://pguzel-umich.github.io/si339-gp/">Team Insert Name</a></h1>
-
-        <!--Main box 1-->
-            <!-- Logo?? of what school (make h1 tag)-->
-            <!-- title?? of what schoo.?? -->
+        <h3> 48104, MI </h3>
 
         <!--Main box 2 Comments-->
         <div id="box2">
-            <!--Title tk-->
+            <h2>Comments:</h2>
             <div>
-                <!-- Templatize commemnts?? -->
-                Comments: 
+                Team Comments and Announcements goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac risus id sem egestas mattis. Proin pellentesque diam eu orci tincidunt, sit amet congue quam tempor. Donec vulputate ligula eu eleifend viverra. Aenean congue aliquet dui et accumsan. Proin vulputate nisi et dolor convallis aliquam.
             </div>
         </div>
 
@@ -165,15 +166,14 @@ index_html_template = f"""
         <footer id="footer">
             <nav>
                 <ul>
-                    <li><a href="">coaches</a></li> <!--Link tk-->
-                    <li><a href="">contact</a></li>
+                    <li><a href="https://www.google.com/">Credidentials</a></li> 
+                    <li><a href="https://www.google.com/">For Coaches</a></li> 
+                    <li><a href="">Charlie H</a></li>
+                    <li><a href="">Poyraz G</a></li>
                 </ul> 
             </nav>
         </footer>
     </div>
-
-
-
 </body>
 </html>
 """
@@ -181,3 +181,114 @@ index_html_template = f"""
 
 with open("index.html", 'w') as file:
     file.write(index_html_template)
+
+def season_record(athletic_dict):
+    temp_html = ""
+    # Loop over the season record for current athlete
+    for record in athletic_dict['season_record']:
+        temp_html += f"""
+            <tr>
+                <td>{record[1]}</td>
+                <td>{record[2]}</td>
+                <td>{record[3]}</td>
+            </tr>
+        """
+    
+    return temp_html
+
+def career_record(athletic_dict):
+    temp_html = ""
+    # Loop over all the races an athlete has done
+    for record in athletic_dict['career']:
+        temp_html += f"""
+            <tr>
+                <td>{record[1]}</td>
+                <td>{record[3]}</td>
+                <td>{record[4]}</td>
+                <td>{record[5]}</td>
+                <td>{record[6]}</td>
+            </tr>
+        """
+    return temp_html
+
+# print(athlete_data_male[0]['name'])
+# print(season_record(athlete_data_male[0]))
+
+print(career_record(athlete_data_male[0]))
+
+def render_student_html(athlete_dict, template_html):
+    temp_html = ""
+    # Everything after title
+    temp_html = f"""
+    <div>
+        <img src="images/AthleteImages/{athlete_dict['id'][0]}.jpg" alt="img of {athlete_dict['name'][0]}, id: {athlete_dict['id']}" width="75" height="75">
+        <h2>{athlete_dict['name'][0]}</h2>
+        {athlete_dict['id'][0]}
+    </div>
+    <h2>Season Record</h2>
+    <table>
+        <tr>
+            <th>Overall Place</th>
+            <th>Grade</th>
+            <th>Time</th>
+        <tr>
+        {season_record(athlete_dict)}
+    </table>
+    <h3>Career Record</h3>
+    <table>
+        <tr>
+            <th>Overall Place</th>
+            <th>Time</th>
+            <th>Date</th>
+            <th>Meet</th>
+            <th>Comments</th>
+        <tr>
+        {career_record(athlete_dict)}
+    </table>
+    """
+    template_html += temp_html
+    return template_html
+        
+def render_html(athlete_list, student_html_template):
+    # Loop over every student in athlete list
+    for athlete_dict in athlete_list:
+        with open(f"athlete_pages/{athlete_dict['id'][0]}.html", 'w') as file:
+            file.write(render_student_html(athlete_dict, student_html_template))
+
+
+student_html_template = f"""
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deliverable</title> <!--Title TK-->
+
+    <link rel="icon" type="images/icon.png" href="images/icon.png">
+
+</head>
+<body>
+    
+    <!--nav bar-->
+    <div id="tk1">
+        <a href="https://www.athletic.net/">
+            <img src="/images/images.jpeg" alt="site logo" width="175" height="26.13"> <!-- IMG TK-->
+        </a>
+        <nav>
+            <ul>
+                <li><a href="https://www.google.com/">login</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!--Main box-->
+    <div>
+     <!--Main box 1-->
+        <img src="team_insert_name.jpg" alt="team insert name logo" width="100" height="100">
+        <h1><a href="https://pguzel-umich.github.io/si339-gp/">Team Insert Name</a></h1>
+        <h3> 48104, MI </h3>
+    </div>
+"""
+
+render_html(athlete_data_male, student_html_template)
+render_html(athlete_data_female, student_html_template)
