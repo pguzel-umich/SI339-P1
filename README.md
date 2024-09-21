@@ -7,7 +7,7 @@ The output includes an HTML page (index.html) with links to individual athlete p
 
 ## How It Works
 
-# Data Requirements
+### Data Requirements
 For phyton code to run, we require just the CSV files that include athlete and event data. Download the files from the drive provided by SI339 staff. We put all the files on the drive and called drive_download for easy access and navigation. The two below are the files we absolutely need. We find all the data names and tags in these two files. The rest of the data on GitHub is required for HTML5 documents to run correctly and include all the other data, the data that we do not need to create the HTML5 files themselves (images, favicon, logo, etc.).
 > drive_download/athletes/mens_team    \
 > drive_download/athletes/womens_team
@@ -17,9 +17,8 @@ Clone the project and navigate to the project directory. Download the data state
 > python render_templates.py
 
 The script will generate: \
-index.html in the current directory. \
-Individual athlete HTML files in the athlete_pages/ directory.
-
+A main HTML page (index.html) displaying tables of all athletes with links to their profile pages. \
+Each athlete's Individual HTML profile pages contain their season and career records. To prevent overpopulation in the main working directory, these will be placed in the athlete_pages/directory.
 
 ## GitHub Data Structure
 github                                                  \
