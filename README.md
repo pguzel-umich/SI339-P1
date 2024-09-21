@@ -1,4 +1,4 @@
-### Data Structure       \
+### Data Structure
 github                                        \
 &emsp;&emsp; athlete_pages                          \
 &emsp;&emsp;&emsp;&emsp; [athlete_id].html                \
