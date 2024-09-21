@@ -3,7 +3,7 @@
 Our Python script processes data for male and female athletes from CSV files from the given drive folder. We did not upload the CSV files to GitHub because there were simply too many.
 Our short program generates different HTML tables with the provided athlete data. For our index page, it creates a table inside a table to include both female and male athletes. Furthermore, we added a set of functions with loops to make individual HTML pages for each athlete.
 
-The output includes an HTML page (index.html) with links to individual athlete profiles ([athlete_id].html) containing their personal records.
+The output includes an HTML page (index.html) with links to individual athlete profiles (athlete_id.html) containing their personal records.
 
 ## How It Works
 
@@ -19,7 +19,7 @@ Clone the project and navigate to the project directory. Download the data state
 
 The script will generate:
 * A main HTML page (index.html) displaying tables of all athletes with links to their profile pages.
-* Each athlete's Individual HTML profile ([athlete_id].html) pages contain their season and career records. To prevent overpopulation in the main working directory, these will be placed in the athlete_pages/directory.
+* Each athlete's Individual HTML profile (athlete_id.html) pages contain their season and career records. To prevent overpopulation in the main working directory, these will be placed in the athlete_pages/directory.
 
 ## GitHub Data Structure
 github                                                  \
