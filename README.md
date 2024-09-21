@@ -11,8 +11,8 @@ github                                        \
 &emsp;&emsp; index.html                             \
 &emsp;&emsp; render_templates.py                    \
 &emsp;&emsp; images                                 \
-&emsp;&emsp; AthleteImages                          \
-&emsp;&emsp;&emsp;&emsp; [athlete_id].jpg                 \
-&emsp;&emsp; icon.png                               \
-&emsp;&emsp; images.jpeg                            \
-&emsp;&emsp; site_logo.png                           
+&emsp;&emsp;&emsp;&emsp; AthleteImages                          \
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; [athlete_id].jpg                 \
+&emsp;&emsp;&emsp;&emsp; icon.png                               \
+&emsp;&emsp;&emsp;&emsp; images.jpeg                            \
+&emsp;&emsp;&emsp;&emsp; site_logo.png                           
