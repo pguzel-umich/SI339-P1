@@ -6,23 +6,13 @@ The output includes an HTML page (index.html) with links to individual athlete p
 
 Our basic data structure is given below       \
 github                                        \
-&emsp; athlete_pages                          \
-&emsp;&emsp; [athlete_id].html                \
-&emsp; index.html                             \
-&emsp; render_templates.py                    \
-&emsp; images                                 \
-&emsp; AthleteImages                          \
-&emsp;&emsp; [athlete_id].jpg                 \
-&emsp; icon.png                               \
-&emsp; images.jpeg                            \
-&emsp; site_logo.png                           
-
-
-├── main_script.py
-├── drive_download
-│   ├── athletes
-│   │   ├── mens_team (contains male athletes' CSV files)
-│   │   ├── womens_team (contains female athletes' CSV files)
-├── athlete_pages (generated individual athlete HTML files)
-├── images
-│   ├── AthleteImages (contains athlete profile images)
+&emsp;&emsp; athlete_pages                          \
+&emsp;&emsp;&emsp;&emsp; [athlete_id].html                \
+&emsp;&emsp; index.html                             \
+&emsp;&emsp; render_templates.py                    \
+&emsp;&emsp; images                                 \
+&emsp;&emsp; AthleteImages                          \
+&emsp;&emsp;&emsp;&emsp; [athlete_id].jpg                 \
+&emsp;&emsp; icon.png                               \
+&emsp;&emsp; images.jpeg                            \
+&emsp;&emsp; site_logo.png                           
