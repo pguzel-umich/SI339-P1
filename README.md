@@ -6,6 +6,21 @@ Our short program generates different HTML tables with the provided athlete data
 The output includes an HTML page (index.html) with links to individual athlete profiles (athlete_id.html) containing their personal records.
 
 ## How It Works
+The program reads CSV files from directories (drive_download/athletes/mens_team and drive_download/athletes/womens_team). Then, it takes each athlete’s data into dictionaries, separating their season and career records. Afterwards, it creates a main page (index.html) with a table that includes two tables inside (men and women); furthermore each cell includes athletes' profile images, names, IDs, and hyperlinks their individual pages. The program creates an individual HTML page for each athlete with their season and career performance records.\
+
+In short, our program creates index.html for all athletes and individual HTML files in the athlete_pages/ directory for each athlete.
+
+1. **`load_data(directory, athlete_list)`**: Reads CSV files from the directory and organizes athlete data into dictionaries, adding them to a list.
+
+2. **`template_table(athlete_list)`**: Generates an HTML table of athletes with links to their individual profile pages.
+
+3. **`season_record(athlete_dict)`**: Returns an HTML table of an athlete's season records.
+
+4. **`career_record(athlete_dict)`**: Returns an HTML table of an athlete's career records.
+
+5. **`render_student_html(athlete_dict, template_html)`**: Adds an athlete's profile, season, and career records to the template_html.
+
+6. **`render_html(athlete_list, student_html_template)`**: Creates individual HTML files for each athlete using student_html_template.
 
 
 ### Data Requirements
@@ -15,7 +30,7 @@ For phyton code to run, we require just the CSV files that include athlete and e
 
 ## How To Use
 Clone the project and navigate to the project directory. Download the data stated in **Data Requirements** and place the folders properly. Then, in order to run the program, simply enter the provided line below to your terminal:
-> python render_templates.py
+ **`python render_templates.py`**
 
 The script will generate:
 * A main HTML page (index.html) displaying tables of all athletes with links to their profile pages.
