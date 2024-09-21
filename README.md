@@ -1,18 +1,3 @@
-### Data Structure
-github                                        \
-&emsp;&emsp; athlete_pages                          \
-&emsp;&emsp;&emsp;&emsp; [athlete_id].html                \
-&emsp;&emsp; index.html                             \
-&emsp;&emsp; render_templates.py                    \
-&emsp;&emsp; images                                 \
-&emsp;&emsp;&emsp;&emsp; AthleteImages                          \
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; [athlete_id].jpg                 \
-&emsp;&emsp;&emsp;&emsp; icon.png                               \
-&emsp;&emsp;&emsp;&emsp; images.jpeg                            \
-&emsp;&emsp;&emsp;&emsp; site_logo.png                           
-
-### HOW THE PHYTON WORKS
-
 ## OVERVIEW
 
 Our Python script processes data for male and female athletes from CSV files from the given drive folder. We did not include the csv files here as there were simply too many.
@@ -33,3 +18,15 @@ For phyton code to run we actaully require just csv files that would include ath
 
 
 
+### GitHub Data Structure
+github                                        \
+&emsp;&emsp; athlete_pages                          \
+&emsp;&emsp;&emsp;&emsp; [athlete_id].html                \
+&emsp;&emsp; index.html                             \
+&emsp;&emsp; render_templates.py                    \
+&emsp;&emsp; images                                 \
+&emsp;&emsp;&emsp;&emsp; AthleteImages                          \
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; [athlete_id].jpg                 \
+&emsp;&emsp;&emsp;&emsp; icon.png                               \
+&emsp;&emsp;&emsp;&emsp; images.jpeg                            \
+&emsp;&emsp;&emsp;&emsp; site_logo.png                           
