@@ -17,8 +17,8 @@ Clone the project and navigate to the project directory. Download the data state
 > python render_templates.py
 
 The script will generate: \
-A main HTML page (index.html) displaying tables of all athletes with links to their profile pages. \
-Each athlete's Individual HTML profile pages contain their season and career records. To prevent overpopulation in the main working directory, these will be placed in the athlete_pages/directory.
+* A main HTML page (index.html) displaying tables of all athletes with links to their profile pages. \
+* Each athlete's Individual HTML profile pages contain their season and career records. To prevent overpopulation in the main working directory, these will be placed in the athlete_pages/directory.
 
 ## GitHub Data Structure
 github                                                  \
