@@ -109,7 +109,7 @@ index_html_template = f"""
     <!--nav bar-->
     <div id="tk1">
         <a href="https://www.athletic.net/">
-            <img src="/images/images.jpeg" alt="site logo" width="175" height="26.13"> <!-- IMG TK-->
+            <img src="/images/images.jpeg" alt="site logo" width="175" height="26"> <!-- IMG TK-->
         </a>
         <nav>
             <ul>
