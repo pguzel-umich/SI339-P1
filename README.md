@@ -4,3 +4,15 @@ The short program generates different HTML tables with athlete data provided. Fo
 
 The output includes an HTML page (index.html) with links to individual athlete profiles, which contains their personal records.
 
+Our basic data structure is given below
+github
+    athlete_pages
+        [athlete_id].html
+    index.html
+    render_templates.py
+    images
+      AthleteImages
+        [athlete_id].jpg
+      icon.png
+      images.jpeg
+      site_logo.png
