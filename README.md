@@ -3,7 +3,7 @@
 Our Python script processes data for male and female athletes from CSV files from the given drive folder. We did not upload the CSV files to GitHub because there were simply too many.
 Our short program generates different HTML tables with the provided athlete data. For our index page, it creates a table inside a table to include both female and male athletes. Furthermore, we added a set of functions with loops to make individual HTML pages for each athlete.
 
-The output includes an HTML page (index.html) with links to individual athlete profiles containing their personal records.
+The output includes an HTML page (index.html) with links to individual athlete profiles ([athlete_id].html) containing their personal records.
 
 ## How It Works
 
