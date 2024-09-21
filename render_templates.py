@@ -69,7 +69,7 @@ def template_table(athlete_list):
         <tr>
             <td>
                 <div>
-                    <img src="images/AthleteImages/{athlete_dict['id']}.jpg" alt="img of {athlete_dict['name'][0]}, id: {athlete_dict['id']}" width="50" height="50">
+                    <img src="images/AthleteImages/{athlete_dict['id'][0]}.jpg" alt="img of {athlete_dict['name'][0]}, id: {athlete_dict['id']}" width="50" height="50">
 
                     <!-- not all the images we require exists in the folders provided to us, but we have realized that there should exists profile pictures of athletes (there is a column in meet csv) that uses their id and .jpg extension to navigate and call them -->
                     
