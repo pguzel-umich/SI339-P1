@@ -71,7 +71,7 @@ def template_table(athlete_list):
                 <div>
                     <!-- not all the images we require exists in the folders provided to us, but we have realized that there should exists profile pictures of athletes (there is a column in meet csv) that uses their id and .jpg extension to navigate and call them -->
                     
-                    <a href="athlete_pages/{athlete_dict['id'][0]}.html"> <img src="images/AthleteImages/{athlete_dict['id'][0]}.jpg" alt="img of {athlete_dict['name'][0]}, id: {athlete_dict['id']}" width="50" height="50"> </a>
+                    <a href="athlete_pages/{athlete_dict['id'][0]}.html"> <img src="images/AthleteImages/{athlete_dict['id'][0]}.jpg" alt="img of {athlete_dict['name'][0]}, id: {athlete_dict['id']}" width="75" height="75"> </a>
                     
                     <a href="athlete_pages/{athlete_dict['id'][0]}.html"> {athlete_dict['name'][0]} </a>
         
@@ -109,7 +109,7 @@ index_html_template = f"""
     <!--nav bar-->
     <div id="tk1">
         <a href="https://www.athletic.net/">
-            <img src="images/images.jpeg" alt="site logo" width="175" height="26"> <!-- IMG TK-->
+            <img src="images/site_logo.jpeg" alt="site logo" width="175" height="26"> <!-- IMG TK-->
         </a>
         <nav>
             <ul>
@@ -121,7 +121,7 @@ index_html_template = f"""
     <!--Main box-->
     <div>
      <!--Main box 1-->
-        <img src="team_insert_name.jpg" alt="team insert name logo" width="100" height="100">
+        <img src="team_insert_name.jpg" alt="team insert name logo" width="150" height="150">
         <h1><a href="https://pguzel-umich.github.io/si339-gp/">Team Insert Name</a></h1>
         <h3> 48104, MI </h3>
 
@@ -214,14 +214,14 @@ def career_record(athletic_dict):
 # print(athlete_data_male[0]['name'])
 # print(season_record(athlete_data_male[0]))
 
-print(career_record(athlete_data_male[0]))
+# print(career_record(athlete_data_male[0]))
 
 def render_student_html(athlete_dict, template_html):
     temp_html = ""
     # Everything after title
     temp_html = f"""
     <div>
-        <img src="images/AthleteImages/{athlete_dict['id'][0]}.jpg" alt="img of {athlete_dict['name'][0]}, id: {athlete_dict['id']}" width="75" height="75">
+        <img src="images/AthleteImages/{athlete_dict['id'][0]}.jpg" alt="img of {athlete_dict['name'][0]}, id: {athlete_dict['id']}" width="100" height="100">
         <h2>{athlete_dict['name'][0]}</h2>
         {athlete_dict['id'][0]}
     </div>
@@ -272,7 +272,7 @@ student_html_template = f"""
     <!--nav bar-->
     <div id="tk1">
         <a href="https://www.athletic.net/">
-            <img src="images/images.jpeg" alt="site logo" width="175" height="26.13"> <!-- IMG TK-->
+            <img src="images/site_logo.jpeg" alt="site logo" width="175" height="26"> <!-- IMG TK-->
         </a>
         <nav>
             <ul>
@@ -284,7 +284,7 @@ student_html_template = f"""
     <!--Main box-->
     <div>
      <!--Main box 1-->
-        <img src="team_insert_name.jpg" alt="team insert name logo" width="100" height="100">
+        <img src="team_insert_name.jpg" alt="team insert name logo" width="150" height="150">
         <h1><a href="https://pguzel-umich.github.io/si339-gp/">Team Insert Name</a></h1>
         <h3> 48104, MI </h3>
     </div>
